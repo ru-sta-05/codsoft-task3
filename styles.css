@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Big Shoulders Stencil Text", cursive;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #4e3f3f, #69458a);
+}
+
+.calculator {
+  border: 1px solid #8e76d5;
+  padding: 20px;
+  border-radius: 16px;
+  background: transparent;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#result {
+  width: 100%;
+  height: 70px;
+  font-size: 30px;
+  text-align: right;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+  border: 1px solid #d7c4c4;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+}
+
+button {
+  height: 70px;
+  font-size: 24px;
+  background-color: #98fff6dc;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #e7dcdc;
+}
